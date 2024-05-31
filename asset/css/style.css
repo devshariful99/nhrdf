@@ -29,12 +29,12 @@
 
 
     --dark-primary-color: #ffffff;
-    --dark-secondary-color: #ecf7ef;
+    /* --dark-secondary-color: #ecf7ef; */
     
-    --dark-primary-bg-color: #000000;
+    /* --dark-primary-bg-color: #000000; */
     --dark-secondary-bg-color: #1a1a1a;
 
-    --dark-border-color: #03ff96;
+    /* --dark-border-color: #03ff96;
 
     --dark-btn-color: #e21b70;
     --dark-btn-bg-color: #ffffff;
@@ -42,7 +42,7 @@
     --dark-hover-color: #ffffff;
     --dark-hover-bg-color: transparent;
     --dark-hover-border-color: #ffffff;
-    --dark-box-shadow:rgba(255, 255, 255, 0.35) 0px 5px 15px;
+    --dark-box-shadow:rgba(255, 255, 255, 0.35) 0px 5px 15px; */
 }
 
 *{
@@ -293,4 +293,55 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
   font-size: 15px;
   text-align: center;
   text-shadow: 0px 0px 20px blue;
+}
+
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                 FAQ CSS 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+.faq-section{
+  background-color: var(--secondary-bg-color);
+  min-height: calc(100vh - 140px);
+}
+.faq-section .faq-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;
+  background-color: var(--dark-secondary-bg-color);
+}
+.faq-section .faq-title h4{
+  color: var(--dark-primary-color);
+}
+.faq-section .faq-title span{
+  transition: .4s;
+}
+.faq-section .faq-desc{
+  background-color: var(--primary-bg-color);
+  color: var(--text-secondary-color);
+  padding: 5px 15px;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: .4s;
+}
+
+/* .faq-section .faq-title:hover + .faq-desc{
+  padding: 15px 15px;
+  height: auto;
+  visibility: visible;
+  opacity: 1;
+}
+.faq-section .faq-title:hover span{
+  transform: rotate(180deg);
+} */
+.faq-desc-active{
+  padding: 15px 15px !important;
+  height: auto !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.angle-active{
+  transform: rotate(180deg);
 }
