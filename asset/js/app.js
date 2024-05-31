@@ -1,8 +1,10 @@
-
-// var myCarousel = document.querySelector('#carouselExampleIndicators');
-// var carousel = new bootstrap.Carousel(myCarousel, {
-//     interval: 2000,
-//     ride: 'carousel'
-// });
+window.setInterval(ut, 1000);
+function ut() {
+  var d = new Date();
+  document.getElementById("time").innerHTML = d.toLocaleTimeString();
+  document.getElementById("date").innerHTML = d.toLocaleDateString();
+}
 
 UIkit.slider(element).startAutoplay();
+
+
