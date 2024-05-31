@@ -1,0 +1,268 @@
+:root{
+    --primary-color: #020202;
+    --secondary-color: #1a1a1a;
+    --text-secondary-color: #6f6f6f;
+
+    --primary-bg-color: #ffffff;
+    --secondary-bg-color: #ecf7ef;
+
+    --border-color: #020202;
+    --border2-color: #838484;
+
+    --btn-color: #ffffff;
+    --btn-bg-color: #e21b70;
+    --btn-border-color: #ffffff;
+
+    --btn-hover-color: #e21b70;
+    --btn-hover-bg-color: #ffffff;
+    --btn-hover-border-color: #e21b70;
+
+    --hover-color: #838484;
+    --hover-bg-color: transparent;
+    --hover-border-color: #838484;
+
+    --box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+
+
+
+
+
+    --dark-primary-color: #ffffff;
+    --dark-secondary-color: #ecf7ef;
+    
+    --dark-primary-bg-color: #000000;
+    --dark-secondary-bg-color: #1a1a1a;
+
+    --dark-border-color: #03ff96;
+
+    --dark-btn-color: #e21b70;
+    --dark-btn-bg-color: #ffffff;
+
+    --dark-hover-color: #ffffff;
+    --dark-hover-bg-color: transparent;
+    --dark-hover-border-color: #ffffff;
+    --dark-box-shadow:rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p,ul,li,ol{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none !important;
+    display: inline-block;
+}
+body{
+    overflow-x: hidden;
+}
+.section{
+    padding: 70px 0;
+}
+.section-title h2{
+    display: inline-block;
+    border-bottom: 3px solid var(--border-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.uk-slidenav:hover{
+  color: var(--primary-color) !important;
+}
+
+
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxx
+        Header CSS 
+ xxxxxxxxxxxxxxxxxxxxxxxxxx*/
+ .header-section{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
+    box-shadow: var(--box-shadow);
+ }
+ .header-section .logo_wrap img{
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+ }
+ .header-section .menu_bar .menu{
+    display: flex;
+    justify-content: space-evenly;
+ }
+ .header-section .menu_bar .menu li a{
+    color: var(--primary-color);
+    display: inline;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .4s;
+ }
+ .header-section .menu_bar .menu li a:hover{
+    color:  var(--hover-color);
+ }
+
+
+ /*xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Banner CSS  
+  xxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+  .banner-section{
+    height: calc(100vh - 80px);
+  }
+
+ /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Food Items CSS  
+  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+  .food-item-section{
+    background-color: var(--primary-bg-color);
+  }
+  .food-item-section .food-item .image{
+    overflow:hidden;
+  }
+  
+  .food-item-section .food-item .image img{
+    height: 300px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    transition: .4s;
+  }
+  .food-item-section .food-item:hover .image img{
+    transform: scale(1.1);
+  }
+  .food-item-section .food-item .desc h4{
+    font-weight: 600;
+    color: var(--secondary-color);
+
+  }
+  .food-item-section .food-item .desc p{
+    color: var(--text-secondary-color);
+
+  }
+  .food-item-section .food-item .desc .price-order{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  .food-item-section .food-item .desc .price-order .price{
+    color: var(--primary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .food-item-section .food-item .desc .price-order .btn{
+    color: var(--btn-color);
+    border: 1px solid var(--btn-border-color);
+    background-color: var(--btn-bg-color);
+    transition: .4s;
+  }
+  .food-item-section .food-item .desc .price-order .btn:hover{
+    color: var(--btn-hover-color);
+    border: 1px solid var(--btn-hover-border-color);
+    background-color: var(--btn-hover-bg-color);
+
+  }
+
+   /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Customers Feedback  
+  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+  .feedback-section{
+    background-color: var(--secondary-bg-color);
+  }
+  .feedback-section .feedback{
+    border: 3px solid var(--border2-color);
+    border-radius: 10px;
+    padding: 20px 20px;
+    position: relative;
+  }
+  .feedback-section .feedback .left-top-icon,.feedback-section .feedback .right-bottom-icon{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 50%;
+    line-height: 50px;
+    color: var(--primary-color);
+    text-align: center;
+  }
+  .feedback-section .feedback .left-top-icon{
+    
+    left: -15px;
+    top: -15px;
+  }
+  .feedback-section .feedback .right-bottom-icon{
+    right: -15px;
+    bottom: -15px;
+  }
+  .feedback-section .feedback .desc p{
+    color: var(--text-secondary-color);
+    text-align: center;
+  }
+  .feedback-section .feedback .author{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+  }
+  .feedback-section .feedback .author .image img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+  .feedback-section .feedback .author .name h3{
+    color: var(--secondary-color);
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 5px;
+  }
+  /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Customers Feedback  
+  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+  .food-gallery{
+    background-color: var(--primary-bg-color);
+  }
+  .food-gallery .gallery-item{
+    overflow: hidden;
+    margin: 15px 0;
+  }
+  .food-gallery .gallery-item .image{
+    height: 300px;
+    width: 100%;
+  }
+  .food-gallery .gallery-item .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .4s;
+  }
+  .food-gallery .gallery-item .image img:hover{
+    transform: scale(1.1);
+  }
+
+
+  /*xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+         Footer CSS  
+  xxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+  footer .socket{
+    height: 60px;
+    line-height: 60px;
+    background-color: var(--dark-secondary-bg-color);
+    text-align: center;
+    color: var(--dark-primary-color);
+  }
+
